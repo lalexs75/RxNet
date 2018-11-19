@@ -1,0 +1,151 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: smspduconstsunit.sesme_ralybnd
+msgid "ESME Already in Bound State"
+msgstr ""
+
+#: smspduconstsunit.sesme_rbindfail
+msgid "Bind Failed"
+msgstr ""
+
+#: smspduconstsunit.sesme_rcancelfail
+msgid "Cancel SM Failed"
+msgstr ""
+
+#: smspduconstsunit.sesme_rcntsubdl
+msgid "Cannot Submit to Distribution List"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvbndsts
+msgid "Incorrect BIND Status for given command"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvcmdid
+msgid "Invalid Command ID"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvcmdlen
+msgid "Command Length is invalid"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvdestflag
+msgid "Destination flag is invalid (submit_multi)"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvdlname
+msgid "Invalid Distribution List name"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvdstadr
+msgid "Invalid Dest Addr"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvdstnpi
+msgid "Invalid Destination address NPI"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvdstton
+msgid "Invalid Destination address TON"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvesmclass
+msgid "Invalid esm_class field data"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvmsgid
+msgid "Message ID is invalid"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvmsglen
+msgid "Message Length is invalid"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvnumdests
+msgid "Invalid number of destinations"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvnummsgs
+msgid "Invalid number of messages"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvpaswd
+msgid "Invalid Password"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvprtflg
+msgid "Invalid Priority Flag"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvregdlvflg
+msgid "Invalid Registered Delivery Flag"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvrepflag
+msgid "Invalid replace_if_present flag"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvsertyp
+msgid "Invalid Service Type"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvsrcadr
+msgid "Invalid Source Address"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvsrcnpi
+msgid "Invalid Source address NPI"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvsrcton
+msgid "Invalid Source address TON"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvsubrep
+msgid "Invalid 'submit with replace' request (i.e. submit_sm with replace_if_present_flag set)"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvsysid
+msgid "Invalid System ID"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvsystyp
+msgid "Invalid system_type field"
+msgstr ""
+
+#: smspduconstsunit.sesme_rmsgqful
+msgid "Message Queue Full"
+msgstr ""
+
+#: smspduconstsunit.sesme_rok
+msgid "No Error"
+msgstr ""
+
+#: smspduconstsunit.sesme_rreplacefail
+msgid "Replace SM Failed"
+msgstr ""
+
+#: smspduconstsunit.sesme_rsubmitfail
+msgid "submit_sm or submit_multi failed"
+msgstr ""
+
+#: smspduconstsunit.sesme_rsyserr
+msgid "System Error"
+msgstr ""
+
+#: smspduconstsunit.sesme_rthrottled
+msgid "Throttling error (ESME has exceeded allowed message limits)"
+msgstr ""
+
+#: smspduconstsunit.sesme_runknow1_bee
+msgid "Error in phone numbe on beeline"
+msgstr ""
+
+#: smspduconstsunit.sesme_unkow
+msgid "Unknow"
+msgstr ""
+
+#: smspduconstsunit.sunknowbindtype
+msgid "Unknow bind type"
+msgstr ""
+

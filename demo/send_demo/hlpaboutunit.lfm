@@ -1,0 +1,86 @@
+object hlpAboutForm: ThlpAboutForm
+  Left = 495
+  Height = 439
+  Top = 308
+  Width = 581
+  ActiveControl = ListBox1
+  Caption = 'About...'
+  ClientHeight = 439
+  ClientWidth = 581
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '0.9.29'
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 40
+    Top = 393
+    Width = 569
+    TabOrder = 0
+    ShowButtons = [pbClose, pbHelp]
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 6
+    Height = 18
+    Top = 30
+    Width = 569
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Top = 24
+    BorderSpacing.Around = 6
+    Caption = 'SMS send demo'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 6
+    Height = 18
+    Top = 54
+    Width = 569
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 6
+    Caption = '(c) Lagunov Aleksey'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 6
+    Height = 18
+    Top = 78
+    Width = 569
+    Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 6
+    Caption = 'License: GPL 2'
+    ParentColor = False
+  end
+  object ListBox1: TListBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ButtonPanel1
+    Left = 6
+    Height = 285
+    Top = 102
+    Width = 569
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Around = 6
+    ItemHeight = 0
+    TabOrder = 1
+    TopIndex = -1
+  end
+end

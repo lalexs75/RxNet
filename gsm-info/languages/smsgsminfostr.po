@@ -1,0 +1,19 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: smsgsminfostr.serrorapikeyuseridnotset
+msgid "API Key or USER ID not set"
+msgstr ""
+
+#: smsgsminfostr.serroroncheckstatus
+msgid "Error on check status"
+msgstr ""
+
+#: smsgsminfostr.serrorsiterequest
+msgid "Error on site request"
+msgstr ""
+
+#: smsgsminfostr.serrorunknowapicommand
+msgid "Unknow api command - \"%s\""
+msgstr ""
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="rxnet"/>
+    <Author Value="Lagunov A.A."/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="сетевые компоненты"/>
+    <License Value="modified LGPL-2"/>
+    <Version Minor="1" Release="2"/>
+    <Files Count="7">
+      <Item1>
+        <Filename Value="smpp.pas"/>
+        <UnitName Value="SMPP"/>
+      </Item1>
+      <Item2>
+        <Filename Value="smspduconstsunit.pas"/>
+        <UnitName Value="smsPDUConstsUnit"/>
+      </Item2>
+      <Item3>
+        <Filename Value="smspduoptparamtypesunit.pas"/>
+        <UnitName Value="smsPDUOptParamTypesUnit"/>
+      </Item3>
+      <Item4>
+        <Filename Value="smspdutypesunit.pas"/>
+        <UnitName Value="smsPDUTypesUnit"/>
+      </Item4>
+      <Item5>
+        <Filename Value="registerrxnet.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="RegisterRxNet"/>
+      </Item5>
+      <Item6>
+        <Filename Value="smsutils.pas"/>
+        <UnitName Value="smsUtils"/>
+      </Item6>
+      <Item7>
+        <Filename Value="smscommandtypes.pas"/>
+        <UnitName Value="smsCommandTypes"/>
+      </Item7>
+    </Files>
+    <LazDoc Paths="docs"/>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="languages"/>
+    </i18n>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

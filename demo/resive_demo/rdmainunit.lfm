@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 395
+  Height = 342
+  Top = 231
+  Width = 608
+  ActiveControl = Button1
+  Caption = 'Form1'
+  ClientHeight = 342
+  ClientWidth = 608
+  LCLVersion = '0.9.29'
+  object Button1: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 470
+    Height = 29
+    Top = 136
+    Width = 132
+    Anchors = [akTop, akRight]
+    AutoSize = True
+    BorderSpacing.Around = 6
+    Caption = 'Проверка почты'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 171
+    Top = 171
+    Width = 608
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+  object RxSMPP1: TRxSMPP
+    Active = False
+    ServerName = '127.0.0.1'
+    BindType = btReceiver
+    Password = 'password'
+    UserName = 'smppclient1'
+    SystemID = 'SMPP'
+    SourceAdress = '150'
+    ConvertPhoneNum = True
+    CodePage = 0
+    SrcAdrTON = tonUnknown
+    SrcAdrNPI = 0
+    DstAdrTON = tonUnknown
+    DstAdrNPI = 0
+    left = 184
+    top = 104
+  end
+end

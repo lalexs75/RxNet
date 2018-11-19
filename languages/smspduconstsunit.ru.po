@@ -1,0 +1,151 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: smspduconstsunit.sesme_ralybnd
+msgid "ESME Already in Bound State"
+msgstr "ESME уже в состоянии Bound"
+
+#: smspduconstsunit.sesme_rbindfail
+msgid "Bind Failed"
+msgstr "Ошибка Bind"
+
+#: smspduconstsunit.sesme_rcancelfail
+msgid "Cancel SM Failed"
+msgstr "Ошибка отмена короткого сообщения"
+
+#: smspduconstsunit.sesme_rcntsubdl
+msgid "Cannot Submit to Distribution List"
+msgstr "Не могу отправить по списку получателей"
+
+#: smspduconstsunit.sesme_rinvbndsts
+msgid "Incorrect BIND Status for given command"
+msgstr "Не верное состояние BIND для указанной команды"
+
+#: smspduconstsunit.sesme_rinvcmdid
+msgid "Invalid Command ID"
+msgstr "Ошибочный ID команды"
+
+#: smspduconstsunit.sesme_rinvcmdlen
+msgid "Command Length is invalid"
+msgstr "Не верная длинна команды"
+
+#: smspduconstsunit.sesme_rinvdestflag
+msgid "Destination flag is invalid (submit_multi)"
+msgstr "Ошибочный флаг назначения (submit_multi)"
+
+#: smspduconstsunit.sesme_rinvdlname
+msgid "Invalid Distribution List name"
+msgstr "Ошибочное имя списка получателей"
+
+#: smspduconstsunit.sesme_rinvdstadr
+msgid "Invalid Dest Addr"
+msgstr "Ошибочный адрес получателя"
+
+#: smspduconstsunit.sesme_rinvdstnpi
+msgid "Invalid Destination address NPI"
+msgstr "Ошибочное NPI адреса получателя"
+
+#: smspduconstsunit.sesme_rinvdstton
+msgid "Invalid Destination address TON"
+msgstr "Ошибочное TON адреса получателя"
+
+#: smspduconstsunit.sesme_rinvesmclass
+msgid "Invalid esm_class field data"
+msgstr "Ошибочные данные поля esm_class"
+
+#: smspduconstsunit.sesme_rinvmsgid
+msgid "Message ID is invalid"
+msgstr "Ошибочное ID соощения"
+
+#: smspduconstsunit.sesme_rinvmsglen
+msgid "Message Length is invalid"
+msgstr "Ошибочная длинна сообщения"
+
+#: smspduconstsunit.sesme_rinvnumdests
+msgid "Invalid number of destinations"
+msgstr "Ошибка количества получателей"
+
+#: smspduconstsunit.sesme_rinvnummsgs
+msgid "Invalid number of messages"
+msgstr "Ошибочное число сообщения"
+
+#: smspduconstsunit.sesme_rinvpaswd
+msgid "Invalid Password"
+msgstr "Ошибочный пароль"
+
+#: smspduconstsunit.sesme_rinvprtflg
+msgid "Invalid Priority Flag"
+msgstr "Ошибка флага приоритета"
+
+#: smspduconstsunit.sesme_rinvregdlvflg
+msgid "Invalid Registered Delivery Flag"
+msgstr ""
+
+#: smspduconstsunit.sesme_rinvrepflag
+msgid "Invalid replace_if_present flag"
+msgstr "Ошибка флага replace_if_present"
+
+#: smspduconstsunit.sesme_rinvsertyp
+msgid "Invalid Service Type"
+msgstr "Ошибка типа сервиса"
+
+#: smspduconstsunit.sesme_rinvsrcadr
+msgid "Invalid Source Address"
+msgstr "Ошибка адреса отправителя"
+
+#: smspduconstsunit.sesme_rinvsrcnpi
+msgid "Invalid Source address NPI"
+msgstr "Ошибка NPI адреса отправителя"
+
+#: smspduconstsunit.sesme_rinvsrcton
+msgid "Invalid Source address TON"
+msgstr "Ошибка TON адреса отправителя"
+
+#: smspduconstsunit.sesme_rinvsubrep
+msgid "Invalid 'submit with replace' request (i.e. submit_sm with replace_if_present_flag set)"
+msgstr "Ошибка запроса 'отправть с заменой' ('submit with replace') (например установлены флаги submit_sm и replace_if_present_flag)"
+
+#: smspduconstsunit.sesme_rinvsysid
+msgid "Invalid System ID"
+msgstr "Не верный идентификатор системы (System ID)"
+
+#: smspduconstsunit.sesme_rinvsystyp
+msgid "Invalid system_type field"
+msgstr "Ошибочное поле system_type"
+
+#: smspduconstsunit.sesme_rmsgqful
+msgid "Message Queue Full"
+msgstr "Переполнение очереди сообщений"
+
+#: smspduconstsunit.sesme_rok
+msgid "No Error"
+msgstr "Нет ошибки"
+
+#: smspduconstsunit.sesme_rreplacefail
+msgid "Replace SM Failed"
+msgstr "Ошибка замены SM"
+
+#: smspduconstsunit.sesme_rsubmitfail
+msgid "submit_sm or submit_multi failed"
+msgstr "Ошибка процедуры submit_sm или submit_multi"
+
+#: smspduconstsunit.sesme_rsyserr
+msgid "System Error"
+msgstr "Ошибка системы"
+
+#: smspduconstsunit.sesme_rthrottled
+msgid "Throttling error (ESME has exceeded allowed message limits)"
+msgstr ""
+
+#: smspduconstsunit.sesme_runknow1_bee
+msgid "Error in phone numbe on beeline"
+msgstr ""
+
+#: smspduconstsunit.sesme_unkow
+msgid "Unknow"
+msgstr "Неизвестно"
+
+#: smspduconstsunit.sunknowbindtype
+msgid "Unknow bind type"
+msgstr ""
+

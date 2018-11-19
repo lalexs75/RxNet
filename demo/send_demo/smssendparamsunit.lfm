@@ -1,0 +1,235 @@
+object smssendParamsForm: TsmssendParamsForm
+  Left = 464
+  Height = 267
+  Top = 346
+  Width = 468
+  ActiveControl = edtSrcNPI
+  Caption = 'SMS send options'
+  ClientHeight = 267
+  ClientWidth = 468
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '0.9.29'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 6
+    Height = 18
+    Top = 6
+    Width = 76
+    BorderSpacing.Around = 6
+    Caption = 'Source NPI'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = edtSrcNPI
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 134
+    Height = 18
+    Top = 6
+    Width = 84
+    BorderSpacing.Around = 6
+    Caption = 'Source TON'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = edtSrcNPI
+    AnchorSideTop.Side = asrBottom
+    Left = 6
+    Height = 18
+    Top = 63
+    Width = 60
+    BorderSpacing.Around = 6
+    Caption = 'Dest NPI'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Control = edtDstNPI
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = edtSrcTON
+    AnchorSideTop.Side = asrBottom
+    Left = 134
+    Height = 18
+    Top = 63
+    Width = 68
+    BorderSpacing.Around = 6
+    Caption = 'Dest TON'
+    ParentColor = False
+  end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 40
+    Top = 221
+    Width = 456
+    TabOrder = 0
+    ShowButtons = [pbOK, pbCancel, pbHelp]
+  end
+  object edtSrcNPI: TSpinEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 27
+    Top = 30
+    Width = 116
+    BorderSpacing.Around = 6
+    TabOrder = 1
+  end
+  object edtSrcTON: TSpinEdit
+    AnchorSideLeft.Control = Label2
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    Left = 140
+    Height = 27
+    Top = 30
+    Width = 122
+    BorderSpacing.Around = 6
+    TabOrder = 2
+  end
+  object edtDstNPI: TSpinEdit
+    AnchorSideLeft.Control = Label3
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 27
+    Top = 87
+    Width = 116
+    BorderSpacing.Around = 6
+    TabOrder = 3
+  end
+  object edtDstTON: TSpinEdit
+    AnchorSideLeft.Control = Label4
+    AnchorSideTop.Control = Label4
+    AnchorSideTop.Side = asrBottom
+    Left = 140
+    Height = 27
+    Top = 87
+    Width = 122
+    BorderSpacing.Around = 6
+    TabOrder = 4
+  end
+  object Label5: TLabel
+    AnchorSideLeft.Control = edtSrcTON
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 268
+    Height = 18
+    Top = 6
+    Width = 77
+    BorderSpacing.Around = 6
+    Caption = 'Server port'
+    ParentColor = False
+  end
+  object edtServerPort: TSpinEdit
+    AnchorSideLeft.Control = Label5
+    AnchorSideTop.Control = Label5
+    AnchorSideTop.Side = asrBottom
+    Left = 274
+    Height = 27
+    Top = 30
+    Width = 126
+    BorderSpacing.Around = 6
+    MaxValue = 65536
+    TabOrder = 5
+  end
+  object Label6: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = edtDstNPI
+    AnchorSideTop.Side = asrBottom
+    Left = 6
+    Height = 18
+    Top = 120
+    Width = 109
+    BorderSpacing.Around = 6
+    Caption = 'Sender number'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    AnchorSideLeft.Control = edtSenderNumber
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = edtDstNPI
+    AnchorSideTop.Side = asrBottom
+    Left = 268
+    Height = 18
+    Top = 120
+    Width = 77
+    BorderSpacing.Around = 6
+    Caption = 'Code page'
+    ParentColor = False
+  end
+  object edtSenderNumber: TEdit
+    AnchorSideLeft.Control = Label6
+    AnchorSideTop.Control = Label6
+    AnchorSideTop.Side = asrBottom
+    Left = 12
+    Height = 29
+    Top = 144
+    Width = 250
+    BorderSpacing.Around = 6
+    TabOrder = 6
+    Text = 'edtSenderNumber'
+  end
+  object edtSMSCodePage: TComboBox
+    AnchorSideLeft.Control = Label7
+    AnchorSideTop.Control = Label7
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 274
+    Height = 31
+    Top = 144
+    Width = 188
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 6
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      '0 - Ansi (win1251)'
+      '1 - UTF16BE'
+      '2 - translit'
+      '3 - UTF8'
+    )
+    Style = csDropDownList
+    TabOrder = 7
+    Text = '0 - Ansi (win1251)'
+  end
+  object Label8: TLabel
+    AnchorSideLeft.Control = edtDstTON
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = edtServerPort
+    AnchorSideTop.Side = asrBottom
+    Left = 268
+    Height = 18
+    Top = 63
+    Width = 66
+    BorderSpacing.Around = 6
+    Caption = 'Bind type'
+    ParentColor = False
+  end
+  object edtBindType: TComboBox
+    AnchorSideLeft.Control = Label8
+    AnchorSideTop.Control = Label8
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 274
+    Height = 29
+    Top = 87
+    Width = 188
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 6
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Transmitter'
+      'Receiver'
+      'Transceiver'
+    )
+    Style = csDropDownList
+    TabOrder = 8
+    Text = 'Transmitter'
+  end
+end

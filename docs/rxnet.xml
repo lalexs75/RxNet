@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<fpdoc-descriptions>
+  <package name="rxnet">
+    <module name="SMPP">
+      <element name="TRxSMPP">
+        <short>Класс TRxSMPP предназначенн для отправки СМС сообщений оператору сотовой связи по протоколу SMPP</short>
+        <descr>
+          <p>Класс TRxSMPP предназначенн для отправки СМС сообщений оператору сотовой связи по протоколу SMPP.</p>
+        </descr>
+      </element>
+      <element name="TRxSMPP.Create">
+        <descr>Создаёт экземпляр компоненты</descr>
+      </element>
+      <element name="TRxSMPP.Destroy"/>
+      <element name="TRxSMPP.Connect">
+        <short>Подключаемся к серверу СМС оператора</short>
+        <descr>Подключаемся к серверу СМС оператора</descr>
+      </element>
+      <element name="TRxSMPP.Disconect">
+        <short>Отключаемся от сервера оператора</short>
+        <descr>Отключаемся от сервера оператора</descr>
+      </element>
+      <element name="TRxSMPP.SequenceNumber">
+        <descr>Порядковй номер сообщения</descr>
+      </element>
+      <element name="TRxSMPP.SendSms">
+        <descr>Производит отправку СМС сообщения на указанный телефонный номер</descr>
+      </element>
+      <element name="TRxSMPP.MsgID">
+        <short>Уникальный код сообщения</short>
+        <descr>Уникальный код сообщения</descr>
+      </element>
+      <element name="TRxSMPP.Active">
+        <short>Свойство Active определяет факт  подключения к internet-серверу оператора сотовой связи.</short>
+        <descr>Свойство Active определяет факт  подключения к internet-серверу оператора сотовой связи.</descr>
+      </element>
+      <element name="TRxSMPP.ServerName">
+        <descr>Имя сервера (или TCP/IP адрес) оператора сотовой связи</descr>
+      </element>
+      <element name="TRxSMPP.RemotePort">
+        <short>TCP порт на сервере оператора сотовой связи</short>
+        <descr>TCP порт на сервере оператора сотовой связи</descr>
+      </element>
+      <element name="TRxSMPP.BindType">
+        <short>Тип подключения</short>
+        <descr>
+          <p>
+            <b>Определяет тип подключения к серверу:</b>
+          </p>
+          <p>
+            <b>btTransmitter</b> (ESME Transmitter) - An ESME bound as a Transmitter is authorised to send short messages to the SMSC and to
+receive the corresponding SMPP responses from the SMSC.
+An ESME indicates its desire not to receive (mobile) originated messages from other SME’s
+(e.g. mobile stations) by binding as a Transmitter.
+</p>
+          <p>
+            <b>btReceiver</b> (ESME Receiver) - 
+An ESME bound as a Receiver is authorised to receive short messages from the SMSC and to
+return the corresponding SMPP message responses to the SMSC.
+</p>
+          <p>
+            <b>btTransceiver</b> (ESME Transceiver) - 
+An ESME bound as a Transceiver is allowed to send messages to the SMSC and receive
+messages from the SMSC over a single SMPP session.
+</p>
+        </descr>
+        <seealso>
+          <link id="TBindType"/>
+        </seealso>
+      </element>
+      <element name="TRxSMPP.Password">
+        <short>Пароль подключения к серверу оператора сотовой связи</short>
+        <descr>Пароль подключения к серверу оператора сотовой связи</descr>
+      </element>
+      <element name="TRxSMPP.UserName">
+        <descr>Имя для подключения к серверу опертора сотовой связи</descr>
+      </element>
+      <element name="TRxSMPP.SystemID">
+        <descr>
+          <p>Идентификатор системы - обычно <b>SMPP</b>
+          </p>
+        </descr>
+      </element>
+      <element name="TRxSMPP.SourceAdress"/>
+      <element name="TRxSMPP.ConvertPhoneNum">
+        <short>Приводим номер телефона к класическому (+7...)</short>
+        <descr>Приводим номер телефона к класическому (+7...)</descr>
+      </element>
+      <element name="TRxSMPP.CodePage">
+        <short>Кодовая страница отправляемых данных</short>
+        <descr>CodePage
+ 0 - Ansi (win1251)
+ 1 - UTF16BE
+ 2 - translit
+ 3 - UTF8</descr>
+      </element>
+      <element name="TRxSMPP.SrcAdrTON"/>
+      <element name="TRxSMPP.SrcAdrNPI"/>
+      <element name="TRxSMPP.DstAdrTON">
+        <short>Type of Number for destination SME.</short>
+        <descr>Type of Number for destination SME.</descr>
+      </element>
+      <element name="TRxSMPP.DstAdrNPI">
+        <short>Numbering Plan Indicator for destination SME.</short>
+        <descr>Numbering Plan Indicator for destination SME.</descr>
+      </element>
+      <element name="TRxSMPP.OnConnect">
+        <short>Возникает в момент подключения к серверу оператора</short>
+        <descr>Возникает в момент подключения к серверу оператора</descr>
+      </element>
+      <element name="TRxSMPP.OnDisconnect">
+        <short>Возникает в момент откобчения от сервера оператора</short>
+        <descr>Возникает в момент откобчения от сервера оператора</descr>
+      </element>
+      <element name="TRxSMPP.OnSmppError">
+        <short>Возникает при обноружении ошибки</short>
+        <descr>Возникает при обноружении ошибки</descr>
+      </element>
+      <element name="TRxSMPP.OnSmppStatus">
+        <descr>Событие возникает при выполнении операций</descr>
+      </element>
+      <element name="TBindType">
+        <short>Определяет тип подключения к серверу компоненты</short>
+        <descr>
+          <p>
+            <b>Определяет тип подключения к серверу компоненты <link id="TRxSMPP.BindType">TRxSMPP.BindType</link>:</b>
+          </p>
+          <p>
+            <b>btTransmitter</b> (ESME Transmitter) - An ESME bound as a Transmitter is authorised to send short messages to the SMSC and to
+receive the corresponding SMPP responses from the SMSC.
+An ESME indicates its desire not to receive (mobile) originated messages from other SME’s
+(e.g. mobile stations) by binding as a Transmitter.
+</p>
+          <p>
+            <b>btReceiver</b> (ESME Receiver) - 
+An ESME bound as a Receiver is authorised to receive short messages from the SMSC and to
+return the corresponding SMPP message responses to the SMSC.
+</p>
+          <p>
+            <b>btTransceiver</b> (ESME Transceiver) - 
+An ESME bound as a Transceiver is allowed to send messages to the SMSC and receive
+messages from the SMSC over a single SMPP session.
+</p>
+        </descr>
+        <seealso>
+          <link id="TRxSMPP.BindType"/>
+        </seealso>
+      </element>
+      <element name="ESMPPError">
+        <short>Тип исключения, возникающий при некоторых ошибках работы компоненты TSMPP</short>
+        <descr>Тип исключения, возникающий при некоторых ошибках работы компоненты TSMPP</descr>
+      </element>
+      <element name="ESMPPServerError">
+        <short>Тип исключения, возникающий при получении ошибки сервера</short>
+        <descr>
+          <p>Тип исключения, возникающий при получении ошибки сервера во время работы компоненты TSMPP.</p>
+        </descr>
+        <seealso>
+          <link id="TRxSMPP.OnSmppError"/>
+          <link id="TRxSMPP.OnSmppStatus"/>
+        </seealso>
+      </element>
+      <element name="ESMPPServerError.Create">
+        <short>Контсруктор создаёт исключение сервера с заданными параметрами</short>
+      </element>
+      <element name="ESMPPServerError.Command">
+        <short>Поле содержит код ошибочной команды</short>
+        <descr>Поле содержит код ошибочной команды</descr>
+      </element>
+      <element name="ESMPPServerError.Sequence_Number">
+        <short>Коле содержит порядковый номер ошибочной команды</short>
+        <descr>Коле содержит порядковый номер ошибочной команды</descr>
+      </element>
+      <element name="ESMPPServerError.Status">
+        <short>Поле содержит код ошибки сервера</short>
+        <descr>Поле содержит код ошибки сервера</descr>
+      </element>
+      <short>Модуль SMPP содержит класс TRxSMPP, предназначенный для отправки СМС сообщений</short>
+      <descr>
+        <p>Модуль SMPP содержит класс <link id="TRxSMPP">TRxSMPP</link>, предназначенный для отправки СМС сообщений оператору сотовой связи по протоколу SMPP.</p>
+      </descr>
+    </module>
+    <module name="smsPDUTypesUnit">
+      <short>Содержит типы данных, используемые при передачи СМС сообщений</short>
+      <descr>Содержит типы данных, используемые при передачи СМС сообщений</descr>
+    </module>
+    <module name="smsPDUConstsUnit">
+      <short>Содержит объявления констант, используемые при передачи СМС сообщений</short>
+      <descr>Содержит объявления констант, используемые при передачи СМС сообщений</descr>
+      <element name="TTONValue">
+        <short>define the Type of Number (TON) to be used in the SME address parameters</short>
+        <descr>
+          <b>5.2.5        addr_ton, source_addr_ton, dest_addr_ton, esme_addr_ton</b>
+These fields define the Type of Number (TON) to be used in the SME address parameters. The following TON values are defined:
+
+
+          <table>
+            <th>
+              <td>TON</td>
+              <td>Value</td>
+              <td>Description</td>
+            </th>
+            <tr>tonUnknown<td/><td>$00000000</td><td/>Unknown </tr>
+            <tr>tonInternational<td/><td>$00000001</td><td>International</td>
+            </tr>
+            <tr>tonNational<td/><td>$00000002</td><td>National</td>
+            </tr>
+            <tr>
+              <td>tonNetworkSpecific</td>
+              <td>$00000003</td>
+              <td>Network Specific</td>
+            </tr>
+            <tr>
+              <td>tonSubscriberNumber</td>
+              <td>$00000004</td>
+              <td>Subscriber Number</td>
+            </tr>
+            <tr>
+              <td>tonAlphanumeric</td>
+              <td>$00000005</td>
+              <td>Alphanumeric</td>
+            </tr>
+            <tr>
+              <td>tonAbbreviated</td>
+              <td>$00000006</td>
+              <td>Abbreviated</td>
+            </tr>
+          </table>
+        </descr>
+      </element>
+    </module>
+    <module name="smsUtils">
+      <element name="TranslitRus2Lat">
+        <short>Функция выполняет транслитерацию строки</short>
+        <descr>Функция выполняет транслитерацию строки русских символов в английские символы, сходные по написанию. 
+
+<remark>Входная строка должна быть в кодировке UTF8</remark>
+        </descr>
+      </element>
+      <short>Модуль вспомагательных утилит</short>
+      <descr>Модуль вспомагательных утилит</descr>
+    </module>
+    <short>Пакет RxNet содержит компоненты, используемые для работы с сетевыми сервисами</short>
+    <descr>Пакет RxNet содержит компоненты, используемые для работы с сетевыми сервисами</descr>
+  </package>
+</fpdoc-descriptions>

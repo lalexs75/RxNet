@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <Name Value="rxWebLaz"/>
+    <AddToProjectUsesSection Value="False"/>
+    <Author Value="Lagunov A.A."/>
+    <CompilerOptions>
+      <Version Value="9"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Files Count="2">
+      <Item1>
+        <Filename Value="rxwstrtools.pas"/>
+        <UnitName Value="rxwStrTools"/>
+      </Item1>
+      <Item2>
+        <Filename Value="rxwstrconsts.pas"/>
+        <UnitName Value="rxwStrConsts"/>
+      </Item2>
+    </Files>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="languages"/>
+    </i18n>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <CustomOptions Childs="ExternHelp">
+      <_ExternHelp Childs="Count"/>
+    </CustomOptions>
+  </Package>
+</CONFIG>
